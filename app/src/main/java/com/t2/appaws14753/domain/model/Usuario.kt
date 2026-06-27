@@ -1,14 +1,12 @@
-package com.t2.appaws14753.domain.model 
+package com.t2.appaws14753.domain.model
 
-data class Usuario (
-    val usuarioId: Int =0,
+data class Usuario(
+    val usuarioId: String = "",
     val rol: String,
     val correo: String,
-    val contraseña: String,
+    val contrasena: String,
     val nombres: String,
     val apellidoPaterno: String,
-    val apellidoMaterno: String,
-    val especialidad: String
-
-
+    val apellidoMaterno: String? = null,
+    val especialidad: String? = null
 )
