@@ -14,5 +14,5 @@ data class UsuarioEntity(
     val nombres: String,
     val apellidoPaterno: String,
     val apellidoMaterno: String?,
-    val especialidad: String?
+    val especialidad: String? = null
 )

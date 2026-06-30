@@ -1,9 +1,10 @@
 package com.t2.appaws14753.data.local.entity
 
 import androidx.room3.Entity
+import androidx.room3.ForeignKey
+import androidx.room3.Index
 import androidx.room3.PrimaryKey
 import java.util.UUID
-
 
 @Entity(tableName = "dispositivo")
 data class DispositivoEntity(
@@ -11,5 +12,5 @@ data class DispositivoEntity(
     val clienteId: String,
     val marca: String,
     val modelo: String,
-    val numeroSerie: String,
+    val numeroSerie: String
 )

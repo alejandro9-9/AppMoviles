@@ -1,17 +1,18 @@
 package com.t2.appaws14753.domain.model
 
+import java.util.UUID
+
 data class Orden(
-    val ordenId: String = "",
+    val ordenId: String = UUID.randomUUID().toString(),
     val dispositivoId: String,
-    val dispositivoInfo: DispositivoInfo,
     val clienteId: String,
     val tecnicoId: String,
     val tecnicoNombre: String,
     val estado: String,
     val prioridad: String,
-    val fechaIngreso: String,
-    val fechaEntrega: String? = null,
+    val fechaIngreso: Long,
+    val fechaEntrega: Long? = null,
     val detalleDiagnostico: String,
-    val servicios: List<DetalleServicio>,
-    val totalCobrado: Double
+    val totalCobrado: Double,
+    val servicios: List<DetalleServicio> = emptyList()
 )
